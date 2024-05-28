@@ -1,0 +1,53 @@
+.box {
+    border: 50px solid red;
+    width: 200px;
+    margin-bottom: 20px;
+    padding: 50px;
+}
+
+/* display: none 콘텐츠 영역 안 보이고, 영역도 사라짐 */
+.green {
+    border: 50px solid #f39c12;
+    visibility: hidden; /* 콘텐츠 영역 안 보이지만, 영역은 그대로 유지됨 */
+    /* display: none; 콘텐츠 영역 안 보이고, 영역도 사라짐 */
+}
+
+.blue {
+    border: 50px solid blue;
+}
+
+.challenge2 {
+    background-color: #fff;
+    background-image:
+    linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+    linear-gradient(#eee .1em, transparent .1em);
+    background-size: 100% 1.2em;
+    padding-left: 10%;
+}
+
+p {
+ font-size: italic;
+ font-size: 16px;
+ font-family: Verdana;
+}
+
+p::first-letter { /* 첫 글자 선택 */
+    font-size: 200%;
+    color: #2980b9;
+}
+
+.sub-header {
+    color: #2980b9;
+}
+
+h1 {
+    color: #9b59b6;
+}
+
+h1::before { /* before(의사요소): content 부분 바로 앞에 삽입 */
+    content: "Topic: ";
+}
+
+h1:first-child {
+    text-align: center;
+}
